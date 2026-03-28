@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premkumar TR | Personal Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+    }
+    header {
+      background: #020617;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      color: #38bdf8;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 10px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 40px;
+    }
+    .profile-img {
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:10px;
+      border:3px solid #38bdf8;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .profile-img:hover {
+      transform: scale(1.1) rotate(2deg);
+      box-shadow: 0 10px 25px rgba(56,189,248,0.7);
+  }
+
+  .profile-container {
+      perspective: 1000px;
+      display: inline-block;
+  }
+
+  .profile-img {
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:10px;
+      border:3px solid #38bdf8;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      transform-style: preserve-3d;
+  }
+
+  .profile-img:hover {
+      box-shadow: 0 15px 35px rgba(56,189,248,0.8);
+  }
+
+  .profile-container {
+      perspective: 1000px;
+      display: inline-block;
+  }
+
+  .profile-img {
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:10px;
+      border:3px solid #38bdf8;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      transform-style: preserve-3d;
+  }
+
+  .profile-img:hover {
+      box-shadow: 0 15px 35px rgba(56,189,248,0.8);
+  }
+
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const img = document.querySelector(".profile-img");
+
+    img.addEventListener("mousemove", (e) => {
+      const rect = img.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = ((y - centerY) / centerY) * 10;
+      const rotateY = ((x - centerX) / centerX) * 10;
+
+      img.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`;
+    });
+
+    img.addEventListener("mouseleave", () => {
+      img.style.transform = "rotateX(0) rotateY(0) scale(1)";
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const img = document.querySelector(".profile-img");
+
+    img.addEventListener("mousemove", (e) => {
+      const rect = img.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = ((y - centerY) / centerY) * 10;
+      const rotateY = ((x - centerX) / centerX) * 10;
+
+      img.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`;
+    });
+
+    img.addEventListener("mouseleave", () => {
+      img.style.transform = "rotateX(0) rotateY(0) scale(1)";
+    });
+  });
+</script>
+</head>
+<body>
+
+<header>
+  <div class="profile-container">
+  <img class="profile-img" src="profile.jpg" alt="Premkumar Profile Photo"></div>
+  <h1>Premkumar TR</h1>
+  <p>Premstanly | Mobile & Laptop Technician</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <div class="card">
+    <p>Hello! I'm Premkumar TR, also known as Premstanly. I am a passionate Mobile and Laptop Technician currently working in UAE.</p>
+    <p>I completed my Diploma in ECE and BCA. I love repairing electronics and solving technical problems.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Skills & Work</h2>
+  <div class="card">
+    <ul>
+      <li>Mobile Repairing</li>
+      <li>Laptop Repairing</li>
+      <li>Hardware Troubleshooting</li>
+      <li>Data Recovery</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Hobbies</h2>
+  <div class="card">
+    <p>I enjoy creating my own products using scrap items. I love experimenting and building innovative things from waste materials.</p>
+  </div>
+</section>
+
+<section>
+  <h2>YouTube Channel</h2>
+  <div class="card">
+    <p>Check out my YouTube channel where I share my projects and repair work:</p>
+    <p><a href="https://www.youtube.com/@stanlysworkshop1972" target="_blank">Stanly's Workshop</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Premkumar TR | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

@@ -3,76 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Premstanly | Profile</title>
+  <title>Premstanly | Technician Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       margin: 0;
       background: #0f172a;
-      color: #fff;
-      text-align: center;
+      color: #e2e8f0;
     }
+
     header {
-      padding: 40px 20px;
-      background: #1e293b;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #1e293b, #020617);
+      border-bottom: 2px solid #38bdf8;
     }
+
     h1 {
-      font-size: 2.5rem;
-      margin: 10px 0;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #38bdf8;
     }
-    p {
+
+    .subtitle {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+
+    .info {
+      margin-top: 15px;
+      font-size: 0.95rem;
       color: #cbd5f5;
     }
+
     .container {
+      max-width: 1100px;
+      margin: auto;
       padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
+
     .card {
       background: #1e293b;
       padding: 20px;
-      margin: 20px auto;
-      max-width: 400px;
       border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: 0.3s;
     }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
     a {
       color: #38bdf8;
       text-decoration: none;
     }
+
     footer {
-      margin-top: 30px;
+      text-align: center;
       padding: 20px;
       background: #020617;
+      color: #94a3b8;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Premstanly</h1>
-    <p>Welcome to my personal website 🚀</p>
-  </header>
+<header>
+  <h1>PREMSTANLY</h1>
+  <div class="subtitle">Mobile & Laptop Technician</div>
+  <div class="info">
+    Premkumar TR | DOB: 3-9-1993<br>
+    Social: PREMSTANLY
+  </div>
+</header>
 
-  <div class="container">
-    <div class="card">
-      <h2>About Me</h2>
-      <p>Hello! I'm Premstanly. I love building websites and learning new technologies.</p>
-    </div>
+<div class="container">
 
-    <div class="card">
-      <h2>Skills</h2>
-      <p>HTML, CSS, JavaScript</p>
-    </div>
-
-    <div class="card">
-      <h2>Contact</h2>
-      <p>Email: your@email.com</p>
-      <p><a href="#">Instagram</a></p>
-    </div>
+  <div class="card">
+    <h2>About Me</h2>
+    <p>I am a skilled mobile and laptop technician with a passion for creating innovative products and modifying electronics using scrap materials.</p>
   </div>
 
-  <footer>
-    <p>© 2026 Premstanly</p>
-  </footer>
+  <div class="card">
+    <h2>Skills</h2>
+    <p>✔ Product Modification<br>
+       ✔ DIY Electronics Projects<br>
+       ✔ Hardware Repair & Troubleshooting</p>
+  </div>
+
+  <div class="card">
+    <h2>Interests</h2>
+    <p>Designing and building unique products, repairing electronics, and experimenting with creative ideas.</p>
+  </div>
+
+  <div class="card">
+    <h2>Projects</h2>
+    <p>DIY electronics and custom-built projects.</p>
+  </div>
+
+  <div class="card">
+    <h2>Tools & Work</h2>
+    <p>Professional tools and real work environment for mobile & laptop repair and electronics modification.</p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: premstanly@icloud.com</p>
+    <p><a href="https://instagram.com/premstanly_93" target="_blank">Instagram</a></p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 PREMSTANLY | Professional Portfolio</p>
+</footer>
 
 </body>
 </html>
